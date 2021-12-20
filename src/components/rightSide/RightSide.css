@@ -104,3 +104,11 @@
 
   margin-top: 16px;
 }
+
+/* tablet version */
+
+@media screen and (max-width: 1250px) {
+  .rightSide {
+    margin: 88px auto;
+  }
+}

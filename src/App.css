@@ -2,3 +2,9 @@
   display: grid;
   grid-template-columns: 0.6fr 0.47fr;
 }
+@media screen and (max-width: 1250px) {
+  .paymentPage {
+    display: flex;
+    flex-direction: column;
+  }
+}

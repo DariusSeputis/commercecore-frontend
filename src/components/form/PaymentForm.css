@@ -219,3 +219,8 @@ select option {
   text-align: center;
   width: 100%;
 }
+
+/* mobil version */
+
+@media screen and (max-width: 1250px) {
+}

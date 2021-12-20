@@ -23,3 +23,14 @@
 .leftSideWrappers {
   margin-right: 8%;
 }
+
+/* tablet version */
+
+@media screen and (max-width: 1250px) {
+  .leftSide {
+    align-items: center;
+  }
+  .leftSideWrappers {
+    margin-right: 0;
+  }
+}
