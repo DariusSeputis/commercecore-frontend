@@ -1,0 +1,117 @@
+.message {
+  display: inline-block;
+  margin: 3rem 10rem 3rem 0;
+}
+.variantsSelect {
+  background-color: #fff;
+  border: 1px solid var(--formBorder-color);
+  border-radius: 6px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 16px 24px 17px 24px;
+
+  width: 640px;
+}
+.selectedProduct {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.separator {
+  background-color: var(--grey6-color);
+
+  margin: 16px 0;
+
+  height: 1px;
+}
+.changeWrap {
+  margin-right: 20px;
+}
+.selectChange {
+  color: var(--orange-color);
+
+  font-family: var(--main-font);
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.chngeIcon {
+  color: var(--orange-color);
+  font-size: 22px;
+  margin-left: 5px;
+}
+
+/* PROSUCT CSS */
+.productWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.productImgName {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 7px;
+}
+
+.productImgWrap {
+  background-color: var(--b1-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-right: 15px;
+
+  height: 40px;
+  width: 40px;
+}
+.productImg {
+  margin-right: -5px;
+
+  width: 25px;
+}
+.productQuantity {
+  font-family: var(--main-font);
+  font-weight: 900;
+  font-size: 14px;
+
+  margin-right: 3px;
+}
+.productName {
+  font-family: var(--main-font);
+
+  font-size: 14px;
+}
+.productPrice {
+  font-family: var(--main-font);
+  font-weight: 900;
+  font-size: 14px;
+}
+.selected {
+  border: 1px solid var(--orange-color);
+}
+.saveChangesBtn {
+  background-color: var(--orange-color);
+  border: 1px solid #000;
+  border-radius: 3px;
+  color: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: auto;
+
+  height: 48px;
+  width: 200px;
+}
+.saveChangesBtn > span {
+  font-family: var(--main-font);
+  font-size: 14px;
+  font-weight: 900;
+
+  letter-spacing: 0.07em;
+}

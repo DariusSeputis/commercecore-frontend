@@ -1,0 +1,221 @@
+.paymentForm {
+  background-color: #fff;
+  border: 1px solid var(--formBorder-color);
+  border-radius: 6px;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-bottom: 5rem;
+
+  padding: 16px 24px 21px 24px;
+
+  width: 640px;
+}
+
+.paymentFormError {
+  color: #f00;
+}
+.paymentFormErrorMethodSelect {
+  color: #f00;
+  position: absolute;
+
+  top: 15px;
+}
+
+.titles h4 {
+  font-family: var(--secondary-font);
+  font-size: 14px;
+  font-weight: 600;
+
+  margin-bottom: 4px;
+}
+
+.titles span {
+  color: var(--grey4-color);
+  font-family: var(--main-font);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+input,
+select {
+  background-color: #fff;
+  color: green;
+
+  font-family: var(--main-font);
+  font-size: 14px;
+  font-weight: normal;
+
+  height: 48px;
+
+  padding-left: 12px;
+  margin: 16px 0 0 0;
+
+  border: 1px solid var(--inputBorder-color);
+  border-radius: 3px;
+}
+
+select {
+  padding-top: 16px;
+
+  height: 48px;
+  width: 202px;
+}
+
+select option {
+  color: black;
+}
+
+.selectText {
+  color: var(--grey3-color);
+
+  font-family: var(--main-font);
+  font-size: 12px;
+  font-weight: 500;
+
+  left: 17px;
+  top: 21px;
+}
+
+.postalCode {
+  width: 154px;
+}
+
+.shippingAddressTitle {
+  font-family: var(--secondary-font);
+  font-size: 14px;
+  font-weight: 600;
+
+  margin-top: 18px;
+  width: 100%;
+}
+
+.titles .paymentMethodTitle {
+  margin-top: 9px;
+  margin-bottom: 5px;
+}
+.paymentMethodSecureText {
+  display: block;
+  margin-bottom: 24px;
+}
+
+/* Custom radio button */
+.customRadioButton {
+  display: inline-block;
+
+  height: 20px;
+  width: 20px;
+
+  border-radius: 50%;
+  border: 1px solid var(--orange-color);
+
+  position: relative;
+
+  margin-right: 8px;
+
+  vertical-align: middle;
+}
+.customRadioButton + .customRadioButton {
+  margin-left: 50px;
+}
+
+.customRadioButton input[type='radio'] {
+  display: none;
+}
+
+.customRadioButton span {
+  background-color: var(--orange-color);
+  border-radius: 50%;
+
+  display: none;
+
+  height: 12px;
+  width: 12px;
+
+  position: absolute;
+
+  left: 3px;
+  top: 3px;
+}
+
+.customRadioButton input[type='radio']:checked + span {
+  display: inline-block;
+}
+
+.radioBtnLable {
+  color: var(--grey3-color);
+
+  font-family: var(--secondary-font);
+  font-size: 14px;
+}
+
+.radioBtnWraper {
+  display: flex;
+  align-items: center;
+
+  padding: 18px 0 18px 16px;
+}
+.paymentMethodSelection {
+  border: 1px solid #f2f2f2;
+  border-radius: 6px 6px 0 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.creditCardSvgsWrapper {
+  padding-right: 16px;
+  display: flex;
+  gap: 6px;
+}
+
+.paymentMethodCardInfoWrapper {
+  width: 100%;
+}
+
+.creditCardInfo {
+  background-color: #fafafa;
+  border: 1px solid #f2f2f2;
+  border-radius: 0 0 6px 6px;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  padding: 0 15px 16px 15px;
+}
+.submitBtn {
+  background: var(--orange-color);
+  border-radius: 6px;
+
+  color: #fff;
+
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  letter-spacing: 0.07em;
+
+  padding: 0;
+  margin: 20px 0 24px 0;
+}
+.securedBySvgs {
+  display: flex;
+  gap: 4px;
+  margin: 0 auto;
+}
+
+.msgFromBackend {
+  color: var(--orange-color);
+
+  font-family: var(--main-font);
+  font-size: 20px;
+  font-weight: 900;
+
+  letter-spacing: 0.3em;
+  margin-bottom: 1rem;
+
+  text-align: center;
+  width: 100%;
+}
