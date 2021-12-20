@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { useFormik } from 'formik';
 import Select from '../common/Select';
 import axios from 'axios';
 import * as Yup from 'yup';
+
+import { ChosenProductContext } from '../../App.js';
 
 // css
 import './PaymentForm.css';
@@ -25,6 +27,10 @@ const countrys = ['Lithuania', 'Germany', 'France'];
 const states = ['state1', 'state2', 'state3'];
 
 const PaymentForm = () => {
+  // CONTEXT
+  const { selectedProductConfirmed, setSelectedProductConfirmed } =
+    useContext(ChosenProductContext);
+
   const [msgFromBackend, setMsgFromBackend] = useState('');
 
   const formik = useFormik({
@@ -78,6 +84,7 @@ const PaymentForm = () => {
         .required('required'),
     }),
     onSubmit: (values) => {
+      values.totalPrice = selectedProductConfirmed.price;
       axios
         .post('http://127.0.0.1:5000/api/import', values)
         .then((res) => setMsgFromBackend(res.data.message))
